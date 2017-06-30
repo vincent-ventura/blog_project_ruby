@@ -5,11 +5,11 @@ one:
   publishDate: 
   hat: MyText
   content: MyText
-  picture: MyString
+  avatar: MyString
 
 two:
   title: MyString
   publishDate: 
   hat: MyText
   content: MyText
-  picture: MyString
+  avatar: MyString

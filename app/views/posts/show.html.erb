@@ -21,8 +21,8 @@
 </p>
 
 <p>
-  <strong>Picture:</strong>
-  <%= @post.picture %>
+  <strong>Avatar:</strong>
+  <%= image_tag @post.avatar.url %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |

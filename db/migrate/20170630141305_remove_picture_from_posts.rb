@@ -1,5 +1,5 @@
-class RemovePictureFromPosts < ActiveRecord::Migration
+class RemoveAvatarFromPosts < ActiveRecord::Migration
   def change
-    remove_column :posts, :picture, :string
+    remove_column :posts, :avatar, :string
   end
 end

@@ -28,8 +28,9 @@
     <%= f.text_area :content %>
   </div>
   <div class="field">
-    <%= f.label :picture %><br>
-    <%= f.text_field :picture %>
+    <%= f.label :avatar %>
+    <%= f.file_field :avatar %>
+    <%= f.hidden_field :avatar_cache %>
   </div>
   <div class="actions">
     <%= f.submit %>
