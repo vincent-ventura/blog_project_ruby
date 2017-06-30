@@ -23,7 +23,11 @@
         <td><%= post.hat %></td>
         <td><%= post.content %></td>
         <td><%= image_tag post.avatar.thumb.url %></td>
-        <td><%= post.user_id %></td>
+        <!--<td>
+          <% if post.user_id %>
+            <%= @users[post.user_id].firstname %><%= @users[post.user_id].lastname %>
+          <% end %>
+        </td> -->
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
