@@ -10,6 +10,7 @@
       <th>Hat</th>
       <th>Content</th>
       <th>Avatar</th>
+      <th>Author</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,6 +23,7 @@
         <td><%= post.hat %></td>
         <td><%= post.content %></td>
         <td><%= image_tag post.avatar.thumb.url %></td>
+        <td><%= post.user_id %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
