@@ -1,7 +1,13 @@
 <h1>Listing for Users</h1>
+<table>
 
-<tbody>
 	<% @users.each do |user| %>
-		<td><%= user.email %></td>
+		<tr>
+			<td><%= user.lastname %></td>
+			<td><%= user.firstname %></td>
+			<td><%= user.age %></td>
+			<td><%= user.email %></td>
+			<td><%= link_to 'Show', user %></td>
+		</tr>
 	<% end %>
-</tbody>
+</table>
