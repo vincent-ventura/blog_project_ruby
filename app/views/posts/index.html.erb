@@ -21,7 +21,7 @@
         <td><%= post.publishDate %></td>
         <td><%= post.hat %></td>
         <td><%= post.content %></td>
-        <td><%= post.avatar %></td>
+        <td><%= image_tag post.avatar.thumb.url %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
