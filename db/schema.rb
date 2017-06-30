@@ -11,10 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170630124017) do
+ActiveRecord::Schema.define(version: 20170630130539) do
 
-  create_table "posts", force: :cascade do |t|
-    t.string   "tilte"
+  create_table "Posts", force: :cascade do |t|
+    t.string   "title"
     t.date     "publishDate"
     t.text     "hat"
     t.text     "content"
